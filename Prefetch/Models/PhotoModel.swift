@@ -6,11 +6,10 @@
 //  Copyright © 2018 Monstar Lab Bangladesh Ltd. All rights reserved.
 //
 
-import UIKit.UIImage
+import Foundation
 
 struct PhotoModel {
     public private(set) var url: URL?
-    public var image: UIImage?
     let order: Int
 
     init(url: String?, order: Int) {

@@ -11,22 +11,20 @@ import UIKit
 class ImageTableViewCell: UITableViewCell {
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var thumbImageView: UIImageView!
-    var photo: UIImage?
     override func awakeFromNib() {
         super.awakeFromNib()
      
     }
 
-    func updateAppearanceFor(_ photo: UIImage?, animated: Bool = true) {
+    func updateAppearanceFor(_ photo: UIImage?) {
         DispatchQueue.main.async {
             self.displayPhoto(photo)
         }
     }
 
-    private func displayPhoto(_ photo: UIImage?) {
-        self.photo = photo
-        if let _photo = photo {
-            thumbImageView.image = photo
+    private func displayPhoto(_ image: UIImage?) {
+        if let _image = image {
+            thumbImageView.image = _image
             contentView.backgroundColor = .white
             self.loadingIndicator.stopAnimating()
         } else {

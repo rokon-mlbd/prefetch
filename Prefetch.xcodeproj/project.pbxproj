@@ -60,10 +60,10 @@
 		3ACFD85921BA6D230045803B /* Prefetch */ = {
 			isa = PBXGroup;
 			children = (
-				3ACFD86F21BA6DCD0045803B /* Controllers */,
-				3ACFD86E21BA6DB30045803B /* Views */,
-				3ACFD86D21BA6DA10045803B /* Models */,
 				3ACFD86C21BA6D480045803B /* Other Gubbins */,
+				3ACFD86D21BA6DA10045803B /* Models */,
+				3ACFD86E21BA6DB30045803B /* Views */,
+				3ACFD86F21BA6DCD0045803B /* Controllers */,
 			);
 			path = Prefetch;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XYSCZDXKR7;
+				DEVELOPMENT_TEAM = GJW24JA7KV;
 				INFOPLIST_FILE = "$(SRCROOT)/Prefetch/Other Gubbins/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -345,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XYSCZDXKR7;
+				DEVELOPMENT_TEAM = GJW24JA7KV;
 				INFOPLIST_FILE = "$(SRCROOT)/Prefetch/Other Gubbins/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

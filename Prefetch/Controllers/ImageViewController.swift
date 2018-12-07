@@ -25,14 +25,14 @@ extension ImageViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let cell = cell as? ImageTableViewCell else { return }
 
-        let updateCellClosure: (PhotoModel?) -> () = { [unowned self] (photo) in
-            cell.updateAppearanceFor(photo?.image, animated: true)
+        let updateCellClosure: (UIImage?) -> () = { [unowned self] (image) in
+            cell.updateAppearanceFor(image)
             self.loadingOperations.removeValue(forKey: indexPath)
         }
 
         if let dataLoader = loadingOperations[indexPath] {
-            if let image = dataLoader.photo?.image {
-                cell.updateAppearanceFor(image, animated: false)
+            if let image = dataLoader.image {
+                cell.updateAppearanceFor(image)
                 loadingOperations.removeValue(forKey: indexPath)
             } else {
                 dataLoader.loadingCompleteHandler = updateCellClosure
@@ -57,7 +57,7 @@ extension ImageViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell") as? ImageTableViewCell else {
             fatalError("Sorry could not load cell")
         }
-        cell.updateAppearanceFor(.none, animated: false)
+        cell.updateAppearanceFor(.none)
         return cell
     }
 }
