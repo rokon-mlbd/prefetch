@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A63365121BA710F004B7D98 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63365021BA710F004B7D98 /* PhotoModel.swift */; };
+		3A63365321BA71C5004B7D98 /* PhotoDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63365221BA71C5004B7D98 /* PhotoDataStore.swift */; };
 		3ACFD85B21BA6D230045803B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACFD85A21BA6D230045803B /* AppDelegate.swift */; };
-		3ACFD85D21BA6D230045803B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACFD85C21BA6D230045803B /* ViewController.swift */; };
 		3ACFD86021BA6D230045803B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACFD85E21BA6D230045803B /* Main.storyboard */; };
 		3ACFD86221BA6D240045803B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACFD86121BA6D240045803B /* Assets.xcassets */; };
 		3ACFD86521BA6D240045803B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACFD86321BA6D240045803B /* LaunchScreen.storyboard */; };
+		3ACFD87121BA6DF10045803B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACFD87021BA6DF10045803B /* ImageViewController.swift */; };
+		3ACFD87321BA6FCA0045803B /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACFD87221BA6FCA0045803B /* ImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A63365021BA710F004B7D98 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		3A63365221BA71C5004B7D98 /* PhotoDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataStore.swift; sourceTree = "<group>"; };
 		3ACFD85721BA6D230045803B /* Prefetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prefetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACFD85A21BA6D230045803B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3ACFD85C21BA6D230045803B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3ACFD85F21BA6D230045803B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3ACFD86121BA6D240045803B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ACFD86421BA6D240045803B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ACFD86621BA6D240045803B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ACFD87021BA6DF10045803B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		3ACFD87221BA6FCA0045803B /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		3ACFD85921BA6D230045803B /* Prefetch */ = {
 			isa = PBXGroup;
 			children = (
-				3ACFD85A21BA6D230045803B /* AppDelegate.swift */,
-				3ACFD85C21BA6D230045803B /* ViewController.swift */,
-				3ACFD85E21BA6D230045803B /* Main.storyboard */,
-				3ACFD86121BA6D240045803B /* Assets.xcassets */,
-				3ACFD86321BA6D240045803B /* LaunchScreen.storyboard */,
-				3ACFD86621BA6D240045803B /* Info.plist */,
+				3ACFD86F21BA6DCD0045803B /* Controllers */,
+				3ACFD86E21BA6DB30045803B /* Views */,
+				3ACFD86D21BA6DA10045803B /* Models */,
+				3ACFD86C21BA6D480045803B /* Other Gubbins */,
 			);
 			path = Prefetch;
+			sourceTree = "<group>";
+		};
+		3ACFD86C21BA6D480045803B /* Other Gubbins */ = {
+			isa = PBXGroup;
+			children = (
+				3ACFD85A21BA6D230045803B /* AppDelegate.swift */,
+				3ACFD86321BA6D240045803B /* LaunchScreen.storyboard */,
+				3ACFD86121BA6D240045803B /* Assets.xcassets */,
+				3ACFD86621BA6D240045803B /* Info.plist */,
+			);
+			path = "Other Gubbins";
+			sourceTree = "<group>";
+		};
+		3ACFD86D21BA6DA10045803B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A63365021BA710F004B7D98 /* PhotoModel.swift */,
+				3A63365221BA71C5004B7D98 /* PhotoDataStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3ACFD86E21BA6DB30045803B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3ACFD85E21BA6D230045803B /* Main.storyboard */,
+				3ACFD87221BA6FCA0045803B /* ImageTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3ACFD86F21BA6DCD0045803B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3ACFD87021BA6DF10045803B /* ImageViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ACFD85D21BA6D230045803B /* ViewController.swift in Sources */,
+				3A63365321BA71C5004B7D98 /* PhotoDataStore.swift in Sources */,
+				3ACFD87321BA6FCA0045803B /* ImageTableViewCell.swift in Sources */,
+				3ACFD87121BA6DF10045803B /* ImageViewController.swift in Sources */,
+				3A63365121BA710F004B7D98 /* PhotoModel.swift in Sources */,
 				3ACFD85B21BA6D230045803B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYSCZDXKR7;
-				INFOPLIST_FILE = Prefetch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Prefetch/Other Gubbins/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYSCZDXKR7;
-				INFOPLIST_FILE = Prefetch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Prefetch/Other Gubbins/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
